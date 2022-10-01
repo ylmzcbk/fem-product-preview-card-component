@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+:root {
+  /* Primary */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --darker-cyan: hsl(158, 32%, 20%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* Neutral */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Font */
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-fraunces: "Fraunces", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cream);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  font-family: var(--font-family-montserrat);
+  font-size: 14px;
+}
+
+.card {
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: min-content;
+
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.card__image {
+  max-width: 375px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.card__category {
+  color: var(--dark-grayish-blue);
+
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.card__title {
+  font-family: var(--font-family-fraunces);
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.card__description {
+  color: var(--dark-grayish-blue);
+  line-height: 1.5rem;
+}
+
+.card__prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.card__prices--new {
+  color: var(--dark-cyan);
+
+  font-family: var(--font-family-fraunces);
+  font-size: 2rem;
+}
+
+.card__prices--old {
+  color: var(--dark-grayish-blue);
+  font-size: 1rem;
+}
+
+.card__button {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  font-weight: 700;
+  font-size: 1rem;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 1rem 2rem;
+}
+
+.card__button:hover {
+  background-color: var(--darker-cyan);
+}
+@media all and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    
+    max-height: 36rem;
+    max-width: 36rem;
+  }
+
+  .card__image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card__content {
+    max-width: 50%;
+  }
+}
