@@ -4,7 +4,7 @@
 :root {
   /* Primary */
   --dark-cyan: hsl(158, 36%, 37%);
-  --darker-cyan: hsl(158, 32%, 20%);
+  --darker-cyan: hsl(158, 36%, 22%);
   --cream: hsl(30, 38%, 92%);
 
   /* Neutral */
@@ -114,6 +114,8 @@ body {
   border: none;
   border-radius: 0.75rem;
   padding: 1rem 2rem;
+
+  transition: all ease 0.3s;
 }
 
 .card__button:hover {

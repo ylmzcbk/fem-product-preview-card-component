@@ -18,17 +18,13 @@
     <main class="card">
       <picture>
         <source
-          media="(max-width: 768px)"
-          srcset="./images/image-product-mobile.jpg"
-        />
-        <source
           media="(min-width: 768px)"
           srcset="./images/image-product-desktop.jpg"
         />
         <img
           class="card__image"
           src="./images/image-product-mobile.jpg"
-          alt="product image"
+          alt="Gabrielle perfume bottle"
         />
       </picture>
       <section class="card__content">
@@ -43,8 +39,8 @@
           <del class="card__prices--old">$169.99</del>
         </div>
         <button class="card__button">
-          <span><img src="./images/icon-cart.svg" alt="cart icon" /> </span>Add
-          to Cart
+          <span><img src="./images/icon-cart.svg" aria-hidden="true" /> </span
+          >Add to Cart
         </button>
       </section>
     </main>
